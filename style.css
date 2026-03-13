@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(135deg, #e9f2ff, #f8fbff);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.app-box {
+    background-color: white;
+    border: 1px solid #dbe7f3;
+}
+
+h1, h2 {
+    color: #1f3c5b;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.task-info {
+    flex: 1;
+}
+
+.task-actions button {
+    margin-left: 8px;
+}
+
+.completed-task {
+    text-decoration: line-through;
+    opacity: 0.75;
+}
+
+.priority-low {
+    color: green;
+    font-weight: bold;
+}
+
+.priority-medium {
+    color: #d39e00;
+    font-weight: bold;
+}
+
+.priority-high {
+    color: red;
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-actions button {
+        margin-left: 0;
+        margin-right: 8px;
+        margin-top: 8px;
+    }
+}
